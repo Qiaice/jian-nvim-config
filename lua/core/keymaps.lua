@@ -26,9 +26,6 @@ map.set('n', 'k', [[v:count ? 'k' : 'gk']], {
     expr = true
 })
 
--- 取消 s 键的默认功能
-map.set('n', 's', '<nop>', opt)
-
 -- 配置插入模式快捷回退到普通模式
 map.set('i', 'jk', '<esc>', opt)
 
