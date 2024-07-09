@@ -11,7 +11,7 @@ return {
     -- cmd = 'commands',
     -- init = function () end,
     -- opts = {},
-    -- config = function () end,
+    -- config = function (_, opts) end,
     -- keys = {}
     -- deactivate = function () end
 }

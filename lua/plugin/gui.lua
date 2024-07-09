@@ -137,5 +137,13 @@ return {
             -- 高亮当前区块中的行号
             line_num = { enable = true, style = '#5cb3cc' }
         }
+    },
+
+    -- gitsigns git 状态提示线
+    {
+        'lewis6991/gitsigns.nvim',
+        lazy = true,
+        event = 'VeryLazy',
+        config = true
     }
 }

@@ -2,6 +2,7 @@
   "bufferline.nvim": { "branch": "main", "commit": "81820cac7c85e51e4cf179f8a66d13dbf7b032d9" },
   "fd": { "branch": "master", "commit": "9cefd79ef4a0e6f9d8dfb560f95921e46fe59e1c" },
   "flash.nvim": { "branch": "main", "commit": "ec0bf2842189f65f60fd40bf3557cac1029cc932" },
+  "gitsigns.nvim": { "branch": "main", "commit": "220446c8c86a280180d852efac60991eaf1a21d4" },
   "hlchunk.nvim": { "branch": "main", "commit": "930fe6262f87d66ca0c85dada3bb7c2a8cb6ec3e" },
   "indent-blankline.nvim": { "branch": "master", "commit": "65e20ab94a26d0e14acac5049b8641336819dfc7" },
   "lazy.nvim": { "branch": "main", "commit": "c882227f1fdc4580d14212df8f814a0772951e3d" },

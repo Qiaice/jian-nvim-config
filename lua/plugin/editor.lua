@@ -9,7 +9,7 @@ return {
             { 'nvim-lua/plenary.nvim', lazy = true },
             { 'nvim-tree/nvim-web-devicons', lazy = true },
             { 'MunifTanjim/nui.nvim', lazy = true }
-            -- { '3rd/image.nvim', lazy = true }, -- 可选, 添加图像支持
+            -- { '3rd/image.nvim', lazy = true }, -- 可选, 添加图像预览支持
         },
         cmd = 'Neotree',
         opts = {
