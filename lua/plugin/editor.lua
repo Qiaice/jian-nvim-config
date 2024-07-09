@@ -109,6 +109,7 @@ return {
                 ['<leader>g'] = { name = 'git explorer' },
                 ['<leader>s'] = { name = 'split windows' },
                 ['<leader>f'] = { name = 'finder' },
+                ['<leader>r'] = { name = 'return telescope' },
                 ['<leader>n'] = { name = 'unhighlight' }
             }
         },
@@ -134,6 +135,7 @@ return {
             { 'BurntSushi/ripgrep', lazy = true },
             { 'sharkdp/fd', lazy = true },
         },
+        cmd = 'Telescope',
         opts = {
             extensions = {
                 fzf = {
@@ -194,6 +196,13 @@ return {
                     require('telescope.builtin').current_buffer_fuzzy_find()
                 end,
                 desc = 'find grep in current buffer'
+            },
+            {
+                '<leader>rs',
+                function ()
+                    require('telescope.builtin').resume()
+                end,
+                desc = 'return old telescope windows'
             }
         }
     }

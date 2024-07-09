@@ -43,7 +43,7 @@ return {
                 local pos = { vim.fn.line('.'), vim.fn.col('.') } -- 保存当前光标位置
                 vim.cmd([[normal! gg0=G]]) -- 格式化代码
                 -- 拼接待执行命令
-                local command = string.format('%dj%dl', pos[1] - 1, pos[2] - 1)
+                local command = string.format('%dj%dlw', pos[1] - 1, pos[2] - 1)
                 vim.cmd([[normal! ]] .. command) -- 将光标恢复原位
             end,
             desc = 'format file'

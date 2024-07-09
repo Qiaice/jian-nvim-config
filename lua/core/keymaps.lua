@@ -44,6 +44,10 @@ map.set('n', '<c-j>', '<c-w>j', opt)
 map.set('n', '<c-k>', '<c-w>k', opt)
 map.set('n', '<c-l>', '<c-w>l', opt)
 
+-- 跳转链接/从链接返回
+map.set('n', '<leader>[', '<c-o>', opt)
+map.set('n', '<leader>]', '<c-]>', opt)
+
 -- 快捷水平/垂直新增窗口
 map.set('n', '<leader>sv', '<c-w>v', {
     noremap = true,
@@ -68,4 +72,11 @@ map.set('n', '<leader>l', '<cmd>Lazy<cr>', {
     noremap = true,
     silent = true,
     desc = 'open Lazy console'
+})
+
+-- 快捷打开 Mason 控制台
+map.set('n', '<leader>m', '<cmd>Mason<cr>', {
+    noremap = true,
+    silent = true,
+    desc = 'open Mason console'
 })
