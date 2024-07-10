@@ -5,7 +5,7 @@ vim.g.maplocalleader = ' '
 local map = vim.keymap
 local opt = { 
     noremap = true, -- 禁止递归映射
-    silent = true -- 禁用映射输出
+    silent = true -- 禁用映射输出原命令
 }
 
 -- 禁用上下左右键
@@ -24,6 +24,18 @@ map.set('n', 'k', [[v:count ? 'k' : 'gk']], {
     noremap = true,
     silent = true,
     expr = true
+})
+
+-- 快捷移动行头行尾
+map.set('n', '<leader>H', '0', {
+    noremap = true,
+    silent = true,
+    desc = 'go to line head'
+})
+map.set('n', '<leader>L', '$', {
+    noremap = true,
+    silent = true,
+    desc = 'go to line tail'
 })
 
 -- 配置插入模式快捷回退到普通模式
@@ -69,11 +81,4 @@ map.set('n', '<leader>l', '<cmd>Lazy<cr>', {
     noremap = true,
     silent = true,
     desc = 'open Lazy console'
-})
-
--- 快捷打开 Mason 控制台
-map.set('n', '<leader>m', '<cmd>Mason<cr>', {
-    noremap = true,
-    silent = true,
-    desc = 'open Mason console'
 })

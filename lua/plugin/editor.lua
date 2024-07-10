@@ -111,6 +111,7 @@ return {
                 ['<leader>f'] = { name = 'finder' },
                 ['<leader>r'] = { name = 'return telescope' },
                 ['<leader>q'] = { name = 'load session' },
+                ['<leader>='] = { name = 'format' },
                 ['<leader>n'] = { name = 'unhighlight' }
             }
         },

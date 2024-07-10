@@ -38,7 +38,7 @@ return {
     end,
     keys = {
         {
-            '<leader>fm',
+            '<leader>=',
             function ()
                 local pos = { vim.fn.line('.'), vim.fn.col('.') } -- 保存当前光标位置
                 vim.cmd([[normal! gg0=G]]) -- 格式化代码
